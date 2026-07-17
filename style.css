@@ -24,11 +24,11 @@ body {
 }
 
 .bg-layer.light {
-  background-image: url('images/light.png');
+  background-image: url('images/light.jpg');
 }
 
 .bg-layer.dark {
-  background-image: url('images/dark.png');
+  background-image: url('images/dark.jpg');
 }
 
 .bg-layer.hidden {
@@ -79,23 +79,29 @@ header {
 
 .work-link {
   position: absolute;
-  background: rgba(0, 0, 0, 0.65);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
   color: #fff;
-  padding: 10px 25px;
-  border-radius: 30px;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
-  font-size: 1rem;
-  transition: background 0.3s, transform 0.2s;
+  font-size: 1.2rem;
+  text-decoration: none;
   pointer-events: auto;
-  backdrop-filter: blur(4px);
+  transition: background 0.3s, transform 0.2s, width 0.2s, height 0.2s;
   will-change: transform;
 }
 
 .work-link:hover {
-  background: rgba(0, 0, 0, 0.9);
-  transform: scale(1.1) !important;
-  transition: transform 0.2s !important;
+  background: rgba(0, 0, 0, 0.95);
+  transform: scale(1.15) !important;
+  width: 66px;
+  height: 66px;
+  z-index: 5;
 }
 
 .modal-overlay {
