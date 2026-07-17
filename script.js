@@ -1,13 +1,28 @@
 const switchBtn = document.getElementById('theme-switch');
-const body = document.body;
-const linksContainer = document.getElementById('work-links');
+const bgLight = document.getElementById('bg-light');
+const bgDark = document.getElementById('bg-dark');
+const workLinks = document.getElementById('work-links');
+let isLight = true;
 
-switchBtn.addEventListener('click', () => {
-  if (body.classList.contains('light')) {
-    body.classList.replace('light', 'dark');
-    linksContainer.classList.remove('hidden');
+function toggleTheme() {
+  if (isLight) {
+    bgLight.classList.add('hidden');
+    bgDark.classList.remove('hidden');
+    workLinks.classList.remove('hidden');
+    isLight = false;
   } else {
-    body.classList.replace('dark', 'light');
-    linksContainer.classList.add('hidden');
+    bgDark.classList.add('hidden');
+    bgLight.classList.remove('hidden');
+    workLinks.classList.add('hidden');
+    isLight = true;
+  }
+}
+
+switchBtn.addEventListener('click', toggleTheme);
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space') {
+    e.preventDefault();
+    toggleTheme();
   }
 });
