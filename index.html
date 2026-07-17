@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моё портфолио</title>
+  <title>Light designer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,10 +19,40 @@
     <div id="theme-switch" class="switch"></div>
 
     <nav id="work-links" class="hidden">
-      <a href="#" class="work-link" style="top: 30%; left: 20%;">Проект 1</a>
-      <a href="#" class="work-link" style="top: 50%; left: 60%;">Проект 2</a>
-      <a href="#" class="work-link" style="top: 70%; left: 40%;">Проект 3</a>
+      <a href="#" class="work-link" data-modal="project1" style="top: 30%; left: 20%;">Проект 1</a>
+      <a href="#" class="work-link" data-modal="project2" style="top: 50%; left: 60%;">Проект 2</a>
+      <a href="#" class="work-link" data-modal="project3" style="top: 70%; left: 40%;">Проект 3</a>
     </nav>
+
+    <div id="project1" class="modal-overlay hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Проект 1</h2>
+        <img src="images/project1.jpg" alt="Работа 1" style="width:100%; border-radius:8px; margin:15px 0;">
+        <p>Описание первого проекта.</p>
+        <a href="https://example.com" target="_blank" class="modal-link">Посмотреть проект</a>
+      </div>
+    </div>
+
+    <div id="project2" class="modal-overlay hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Проект 2</h2>
+        <img src="images/project2.jpg" alt="Работа 2" style="width:100%; border-radius:8px; margin:15px 0;">
+        <p>Описание второго проекта.</p>
+        <a href="https://example.com" target="_blank" class="modal-link">Посмотреть проект</a>
+      </div>
+    </div>
+
+    <div id="project3" class="modal-overlay hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Проект 3</h2>
+        <img src="images/project3.jpg" alt="Работа 3" style="width:100%; border-radius:8px; margin:15px 0;">
+        <p>Описание третьего проекта.</p>
+        <a href="https://example.com" target="_blank" class="modal-link">Посмотреть проект</a>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
