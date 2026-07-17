@@ -12,11 +12,11 @@ body {
 }
 
 body.light {
-  background-image: url('images/light.jpg');
+  background-image: url('images/light.png');
 }
 
 body.dark {
-  background-image: url('images/dark.jpg');
+  background-image: url('images/dark.png');
 }
 
 header {
