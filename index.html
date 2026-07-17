@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Light designer</title>
+  <title>Моё портфолио</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
 
   <div id="content">
     <header>
-      <h1>Pavel Zotov</h1>
-      <p class="subtitle">When the lights go out, the truth is lit.</p>
+      <h1>Привет! Я [Твоё имя]</h1>
+      <p class="subtitle">Нажми пробел или на выключатель</p>
     </header>
 
     <div id="theme-switch" class="switch"></div>
@@ -25,32 +25,51 @@
     </nav>
 
     <div id="project1" class="modal-overlay hidden">
-      <div class="modal-content">
+      <div class="modal-content project-modal-content">
         <span class="modal-close">&times;</span>
-        <h2>Проект 1</h2>
-        <img src="images/project1.jpg" alt="Работа 1" style="width:100%; border-radius:8px; margin:15px 0;">
-        <p>Описание первого проекта.</p>
-        <a href="https://example.com" target="_blank" class="modal-link">Посмотреть проект</a>
+        <div class="project-layout">
+          <div class="gallery">
+            <img src="images/project1-1.jpg" alt="Работа 1">
+            <img src="images/project1-2.jpg" alt="Работа 1">
+            <img src="images/project1-3.jpg" alt="Работа 1">
+          </div>
+          <div class="project-info">
+            <h2>Проект 1</h2>
+            <p>Описание первого проекта.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div id="project2" class="modal-overlay hidden">
-      <div class="modal-content">
+      <div class="modal-content project-modal-content">
         <span class="modal-close">&times;</span>
-        <h2>Проект 2</h2>
-        <img src="images/project2.jpg" alt="Работа 2" style="width:100%; border-radius:8px; margin:15px 0;">
-        <p>Описание второго проекта.</p>
-        <a href="https://example.com" target="_blank" class="modal-link">Посмотреть проект</a>
+        <div class="project-layout">
+          <div class="gallery">
+            <img src="images/project2-1.jpg" alt="Работа 2">
+            <img src="images/project2-2.jpg" alt="Работа 2">
+          </div>
+          <div class="project-info">
+            <h2>Проект 2</h2>
+            <p>Описание второго проекта.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div id="project3" class="modal-overlay hidden">
-      <div class="modal-content">
+      <div class="modal-content project-modal-content">
         <span class="modal-close">&times;</span>
-        <h2>Проект 3</h2>
-        <img src="images/project3.jpg" alt="Работа 3" style="width:100%; border-radius:8px; margin:15px 0;">
-        <p>Описание третьего проекта.</p>
-        <a href="https://example.com" target="_blank" class="modal-link">Посмотреть проект</a>
+        <div class="project-layout">
+          <div class="gallery">
+            <img src="images/project3-1.jpg" alt="Работа 3">
+            <img src="images/project3-2.jpg" alt="Работа 3">
+          </div>
+          <div class="project-info">
+            <h2>Проект 3</h2>
+            <p>Описание третьего проекта.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
