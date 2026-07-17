@@ -124,22 +124,18 @@ header {
   pointer-events: none;
 }
 
-.modal-content {
-  background: #fff;
-  color: #222;
-  padding: 30px;
-  border-radius: 16px;
-  max-width: 600px;
-  width: 90%;
-  max-height: 80vh;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+.project-modal-content {
+  max-width: 1000px;
+  width: 95%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
   transform: scale(0.95);
   transition: transform 0.3s ease;
 }
 
-.modal-overlay:not(.hidden) .modal-content {
+.modal-overlay:not(.hidden) .project-modal-content {
   transform: scale(1);
 }
 
@@ -159,18 +155,71 @@ header {
   color: #000;
 }
 
-.modal-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #000;
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+.project-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-.modal-link:hover {
-  background: #333;
+.gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+.project-info {
+  flex: 0 0 300px;
+  color: #222;
+}
+
+.project-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.gallery::-webkit-scrollbar {
+  width: 6px;
+}
+.gallery::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+.gallery::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .project-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project-info {
+    flex: auto;
+  }
+  .gallery {
+    max-height: 40vh;
+  }
 }
