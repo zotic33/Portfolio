@@ -24,11 +24,11 @@ body {
 }
 
 .bg-layer.light {
-  background-image: url('images/light.jpg');
+  background-image: url('images/light.png');
 }
 
 .bg-layer.dark {
-  background-image: url('images/dark.jpg');
+  background-image: url('images/dark.pgn');
 }
 
 .bg-layer.hidden {
