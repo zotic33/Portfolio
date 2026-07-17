@@ -6,19 +6,24 @@
   <title>Моё портфолио</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="light">
-  <header>
-    <h1> Pavel Zotov </h1>
-    <p class="subtitle">When the lights go out, the truth is lit.</p>
-  </header>
+<body>
+  <div id="bg-light" class="bg-layer light"></div>
+  <div id="bg-dark" class="bg-layer dark hidden"></div>
 
-  <div id="theme-switch" class="switch"></div>
+  <div id="content">
+    <header>
+      <h1>Pavel Zotov</h1>
+      <p class="subtitle">When the lights go out, the truth is lit.</p>
+    </header>
 
-  <nav id="work-links" class="hidden">
-    <a href="#" class="work-link" style="top: 30%; left: 20%;">Проект 1</a>
-    <a href="#" class="work-link" style="top: 50%; left: 60%;">Проект 2</a>
-    <a href="#" class="work-link" style="top: 70%; left: 40%;">Проект 3</a>
-  </nav>
+    <div id="theme-switch" class="switch"></div>
+
+    <nav id="work-links" class="hidden">
+      <a href="#" class="work-link" style="top: 30%; left: 20%;">Проект 1</a>
+      <a href="#" class="work-link" style="top: 50%; left: 60%;">Проект 2</a>
+      <a href="#" class="work-link" style="top: 70%; left: 40%;">Проект 3</a>
+    </nav>
+  </div>
 
   <script src="script.js"></script>
 </body>
